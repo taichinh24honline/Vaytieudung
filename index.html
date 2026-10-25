@@ -33,11 +33,15 @@
             z-index: -2;
         }
 
-        /* 0. Letocredit (Cam - Xanh Tím - Trắng) */
+        /* 0. Tikluy (Đỏ - Trắng - Hồng đặc trưng logo) */
+        .glow-border-tikluy::before { 
+            background: conic-gradient(transparent, rgba(239, 68, 68, 0.95), rgba(244, 63, 94, 0.9), rgba(255, 255, 255, 0.85), rgba(220, 38, 38, 0.9), transparent 60%) !important; 
+        }
+        /* 0.1. Letocredit (Cam - Xanh Tím - Trắng) */
         .glow-border-letocredit::before { 
             background: conic-gradient(transparent, rgba(249, 115, 22, 0.95), rgba(79, 70, 229, 0.95), rgba(255, 255, 255, 0.85), rgba(67, 56, 202, 0.9), transparent 60%) !important; 
         }
-        /* 0.1. Moneyveo (Xanh lá - Tím - Trắng) */
+        /* 0.2. Moneyveo (Xanh lá - Tím - Trắng) */
         .glow-border-moneyveo::before { 
             background: conic-gradient(transparent, rgba(34, 197, 94, 0.95), rgba(147, 51, 234, 0.95), rgba(255, 255, 255, 0.85), rgba(22, 163, 74, 0.9), transparent 60%) !important; 
         }
@@ -136,7 +140,55 @@
     <!-- Danh sách dịch vụ sản phẩm -->
     <main class="max-w-md mx-auto px-4 space-y-7 mt-2">
 
-        <!-- 0. LETOCREDIT -->
+        <!-- 0. TIKLUY (ĐẶT Ở VỊ TRÍ ĐẦU TIÊN) -->
+        <div class="glow-border-card glow-border-tikluy shadow-2xl relative">
+            <div class="glow-border-inner">
+                <div class="absolute top-0 right-0 bg-gradient-to-l from-red-500 via-rose-500 to-amber-500 text-white text-xs font-black px-3 py-1 rounded-bl-xl uppercase tracking-wider shadow z-10">DUYỆT 05 PHÚT</div>
+
+                <div class="bg-gradient-to-r from-red-950 via-rose-950 to-slate-900 px-4 py-2.5 flex items-center justify-between border-b border-red-500/20">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-red-600 text-white font-black text-xs px-2 py-0.5 rounded shadow-sm">TIKLUY</span>
+                        <h3 class="font-extrabold text-white text-base tracking-wide">ONLINE</h3>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-slate-950/60 flex justify-center border-b border-slate-800/80">
+                    <a href="https://taichinh24honline.github.io/tin-dung-tu-dong/" target="_blank" class="block w-full max-w-[280px] h-36 rounded-2xl overflow-hidden bg-white p-3 shadow-md flex items-center justify-center transition hover:scale-[1.02]">
+                        <img src="Logo Tikluy.jpeg" alt="Tikluy" class="w-full h-full object-contain">
+                    </a>
+                </div>
+
+                <div class="p-4 space-y-3">
+                    <div class="grid grid-cols-3 gap-2 text-center bg-gradient-to-r from-red-950/40 to-rose-950/30 border border-red-500/20 p-2.5 rounded-xl">
+                        <div>
+                            <p class="text-xs text-slate-400">Nhận tiền</p>
+                            <p class="font-bold text-red-400 text-sm">Chỉ 05 phút</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Độ tuổi</p>
+                            <p class="font-bold text-red-400 text-sm">18 – 70 tuổi</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Hạn mức đến</p>
+                            <p class="font-bold text-red-400 text-sm">100 triệu</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-red-950/30 to-rose-950/20 border border-red-500/20 p-3 rounded-xl space-y-1.5 text-xs text-slate-200">
+                        <p class="font-bold text-red-400 text-xs uppercase tracking-wide"><i class="fa-solid fa-circle-check text-red-400 mr-1"></i> Ưu điểm nổi bật TIKLUY:</p>
+                        <p class="pl-4">• Hạn mức vay lớn từ <strong>30 triệu đến 100 triệu VNĐ</strong></p>
+                        <p class="pl-4">• Hỗ trợ nợ chú ý, dư nợ cao | <strong>Không chứng minh thu nhập</strong></p>
+                    </div>
+
+                    <a href="https://taichinh24honline.github.io/tin-dung-tu-dong/" target="_blank" class="btn-shine block w-full text-center bg-gradient-to-r from-red-600 via-rose-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white font-extrabold py-3.5 rounded-xl shadow-lg shadow-red-600/25 text-sm uppercase tracking-wide transition active:scale-[0.98]">
+                        ĐĂNG KÝ VAY TIKLUY <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 0.1. LETOCREDIT -->
         <div class="glow-border-card glow-border-letocredit shadow-2xl relative">
             <div class="glow-border-inner">
                 <div class="absolute top-0 right-0 bg-gradient-to-l from-orange-500 via-indigo-600 to-indigo-800 text-white text-xs font-black px-3 py-1 rounded-bl-xl uppercase tracking-wider shadow z-10">DUYỆT 05 PHÚT</div>
@@ -184,7 +236,7 @@
         </div>
 
 
-        <!-- 0.1 MONEYVEO -->
+        <!-- 0.2. MONEYVEO -->
         <div class="glow-border-card glow-border-moneyveo shadow-2xl relative">
             <div class="glow-border-inner">
                 <div class="absolute top-0 right-0 bg-gradient-to-l from-emerald-500 via-green-600 to-purple-600 text-white text-xs font-black px-3 py-1 rounded-bl-xl uppercase tracking-wider shadow z-10">DUYỆT 05 PHÚT</div>
@@ -196,7 +248,6 @@
                     </div>
                 </div>
 
-                <!-- Đã khớp hoàn toàn màu nền với màu xanh lá của logo Moneyveo -->
                 <div class="p-4 bg-slate-950/60 flex justify-center border-b border-slate-800/80">
                     <a href="https://click.adpia.vn/tracking.php?m=moneyveo&a=A100157264&l=9999" target="_blank" class="block w-full max-w-[280px] h-36 rounded-2xl overflow-hidden bg-[#16a34a] shadow-md flex items-center justify-center transition hover:scale-[1.02]">
                         <img src="Moneyveo 2.jpeg" alt="Moneyveo" class="w-full h-full object-cover">
